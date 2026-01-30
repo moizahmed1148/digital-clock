@@ -13,23 +13,42 @@ body {
 
 .clock {
     background: rgba(255,255,255,0.12);
-    backdrop-filter: blur(12px);
-    padding: 30px 45px;
-    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    padding: 35px 50px;
+    border-radius: 22px;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
-.time {
+.time-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+#time {
     font-size: 48px;
     font-weight: 600;
     color: #00fff0;
     letter-spacing: 3px;
 }
 
+.ampm {
+    background: #00fff0;
+    color: #002b2b;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .date {
-    margin-top: 10px;
-    font-size: 16px;
+    margin-top: 14px;
+    font-size: 15px;
     color: #e0f7fa;
     letter-spacing: 1px;
+    opacity: 0.9;
 }
